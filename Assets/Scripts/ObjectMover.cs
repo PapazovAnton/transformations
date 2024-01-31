@@ -1,11 +1,15 @@
 using UnityEngine;
 
-public class SphereMover : MonoBehaviour
+//new Vector3(-7.75f, 0.85f, 3.14f);
+//new Vector3(-7.75f, 0.85f, -6.35f);
+
+public class ObjectMover : MonoBehaviour
 {
-    private Vector3 _firstPoint = new Vector3(-7.75f, 0.85f, 3.14f);
-    private Vector3 _secondPoint = new Vector3(-7.75f, 0.85f, -6.35f);
+    [SerializeField] private Vector3 _firstPoint;
+    [SerializeField] private Vector3 _secondPoint;
+    [SerializeField] private float _speed;
+
     private Vector3 _targetPoint;
-    private int _speed = 5;
 
     private void Start()
     {
