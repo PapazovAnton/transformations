@@ -1,9 +1,5 @@
 using UnityEngine;
-
-//new Vector3(-7.75f, 0.85f, 3.14f);
-//new Vector3(-7.75f, 0.85f, -6.35f);
-
-public class ObjectMover : MonoBehaviour
+public class Patrol : MonoBehaviour
 {
     [SerializeField] private Vector3 _firstPoint;
     [SerializeField] private Vector3 _secondPoint;
